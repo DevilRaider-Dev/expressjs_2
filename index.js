@@ -1,5 +1,6 @@
 const express = require('express')
 const app = express()
+const port = process.env.Port || 3000
 
 // set engine to ejs
 app.set('view engine', 'ejs')
@@ -13,5 +14,5 @@ app.get('/contact', (req, res) => {
 });
 
 app.listen(3000, () => {
-    console.log('listening at localhost:3000')
+    console.log(`listening at localhost:${port}`)
 })
