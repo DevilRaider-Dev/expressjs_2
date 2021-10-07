@@ -6,11 +6,11 @@ const port = process.env.Port || 3000
 app.set('view engine', 'ejs')
 
 app.get('/', (req, res) => {
-    res.render('pages/index.ejs', { nav: nav, url: req.url })
+    res.render('pages/index.ejs')
 });
 
 app.get('/contact', (req, res) => {
-    res.render('pages/contact.ejs', { nav: nav, url: req.url, gallery: gallery })
+    res.render('pages/contact.ejs')
 });
 
 app.listen(port, () => {
