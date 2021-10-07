@@ -13,6 +13,6 @@ app.get('/contact', (req, res) => {
     res.render('pages/contact.ejs', { nav: nav, url: req.url, gallery: gallery })
 });
 
-app.listen(3000, () => {
+app.listen(port, () => {
     console.log(`listening at localhost:${port}`)
 })
